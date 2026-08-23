@@ -75,7 +75,7 @@ std::vector<std::string> split_string(std::string f) {
 
 int main() {
 
-    std::string filename{"fake_or_real_news_pdf_text.csv"};
+    std::string filename{"words_list.csv"};
     std::string word_list = parseCSV(filename);
     std::vector<std::string> unique_word_list = split_string(word_list);
 
