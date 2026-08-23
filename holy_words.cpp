@@ -79,12 +79,10 @@ int main() {
     std::string word_list = parseCSV(filename);
     std::vector<std::string> unique_word_list = split_string(word_list);
 
-    int count = 0;
-    while(count<301) {
+    while(true) {
         int x = randomNumber();
 
         std::cout << unique_word_list[x]<< " ";
-        count++;
         std::this_thread::sleep_for(std::chrono::duration<double>(0.5));
     }
 
